@@ -40,11 +40,7 @@ public class Interface extends javax.swing.JFrame {
         jLabel_min = new javax.swing.JLabel();
         jLabel_close = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jTextField_ıd = new javax.swing.JTextField();
-        jPasswordField = new javax.swing.JPasswordField();
-        jButton_Login = new javax.swing.JButton();
         jTextField_ıd1 = new javax.swing.JTextField();
-        jTextField_ıd2 = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -85,52 +81,6 @@ public class Interface extends javax.swing.JFrame {
             }
         });
 
-        jTextField_ıd.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jTextField_ıd.setForeground(new java.awt.Color(153, 153, 153));
-        jTextField_ıd.setText("Username");
-        jTextField_ıd.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                jTextField_ıdFocusGained(evt);
-            }
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                jTextField_ıdFocusLost(evt);
-            }
-        });
-        jTextField_ıd.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField_ıdActionPerformed(evt);
-            }
-        });
-
-        jPasswordField.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jPasswordField.setForeground(new java.awt.Color(153, 153, 153));
-        jPasswordField.setText("Password");
-        jPasswordField.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                jPasswordFieldFocusGained(evt);
-            }
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                jPasswordFieldFocusLost(evt);
-            }
-        });
-        jPasswordField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jPasswordFieldActionPerformed(evt);
-            }
-        });
-
-        jButton_Login.setBackground(new java.awt.Color(255, 255, 255));
-        jButton_Login.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 18)); // NOI18N
-        jButton_Login.setForeground(new java.awt.Color(255, 0, 51));
-        jButton_Login.setText("Login");
-        jButton_Login.setBorder(null);
-        jButton_Login.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton_Login.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_LoginActionPerformed(evt);
-            }
-        });
-
         jTextField_ıd1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jTextField_ıd1.setForeground(new java.awt.Color(153, 153, 153));
         jTextField_ıd1.setText("Username");
@@ -145,23 +95,6 @@ public class Interface extends javax.swing.JFrame {
         jTextField_ıd1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField_ıd1ActionPerformed(evt);
-            }
-        });
-
-        jTextField_ıd2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jTextField_ıd2.setForeground(new java.awt.Color(153, 153, 153));
-        jTextField_ıd2.setText("Username");
-        jTextField_ıd2.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                jTextField_ıd2FocusGained(evt);
-            }
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                jTextField_ıd2FocusLost(evt);
-            }
-        });
-        jTextField_ıd2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField_ıd2ActionPerformed(evt);
             }
         });
 
@@ -180,7 +113,9 @@ public class Interface extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(46, 46, 46)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 282, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(867, Short.MAX_VALUE))
+                .addGap(316, 316, 316)
+                .addComponent(jTextField_ıd1, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(340, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -189,16 +124,6 @@ public class Interface extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel_close)
                         .addGap(18, 18, 18))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jPasswordField, javax.swing.GroupLayout.DEFAULT_SIZE, 211, Short.MAX_VALUE)
-                            .addComponent(jTextField_ıd, javax.swing.GroupLayout.DEFAULT_SIZE, 211, Short.MAX_VALUE)
-                            .addComponent(jTextField_ıd1, javax.swing.GroupLayout.DEFAULT_SIZE, 211, Short.MAX_VALUE)
-                            .addComponent(jTextField_ıd2, javax.swing.GroupLayout.DEFAULT_SIZE, 211, Short.MAX_VALUE))
-                        .addGap(86, 86, 86))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButton_Login, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(154, 154, 154))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(97, 97, 97))))
@@ -211,18 +136,12 @@ public class Interface extends javax.swing.JFrame {
                     .addComponent(jLabel_close)
                     .addComponent(jLabel_min))
                 .addGap(2, 2, 2)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(85, 85, 85)
-                .addComponent(jTextField_ıd2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPasswordField, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jTextField_ıd, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jTextField_ıd1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(29, 29, 29)
-                .addComponent(jButton_Login, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(27, 27, 27)
+                        .addComponent(jTextField_ıd1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(320, 320, 320)
                 .addComponent(jLabel2)
                 .addContainerGap(256, Short.MAX_VALUE))
         );
@@ -275,69 +194,6 @@ public class Interface extends javax.swing.JFrame {
         jLabel_close.setForeground(Color.BLACK);
     }//GEN-LAST:event_jLabel_closeMouseExited
 
-    private void jTextField_ıdFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField_ıdFocusGained
-
-        if(jTextField_ıd.getText().trim().equals("Username"))
-        {
-            jTextField_ıd.setText("");
-            jTextField_ıd.setForeground(Color.BLACK);
-        }
-
-        Border label_border = BorderFactory.createMatteBorder(1,1,1,1,Color.BLACK);
-        jTextField_ıd.setBorder(label_border);
-    }//GEN-LAST:event_jTextField_ıdFocusGained
-
-    private void jTextField_ıdFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField_ıdFocusLost
-
-        if(jTextField_ıd.getText().trim().equals("") || jTextField_ıd.getText().trim().equals("Username") )
-        {
-            jTextField_ıd.setText("Username");
-            jTextField_ıd.setForeground(new Color(153,153,153));
-        }
-        jTextField_ıd.setBorder(null);
-    }//GEN-LAST:event_jTextField_ıdFocusLost
-
-    private void jTextField_ıdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_ıdActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField_ıdActionPerformed
-
-    private void jPasswordFieldFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jPasswordFieldFocusGained
-
-        String pass = String.valueOf(jPasswordField.getPassword());
-
-        if(pass.equals("Password"))
-        {
-            jPasswordField.setText("");
-            jPasswordField.setForeground(Color.BLACK);
-        }
-
-        Border label_border = BorderFactory.createMatteBorder(1,1,1,1,Color.BLACK);
-        jPasswordField.setBorder(label_border);
-    }//GEN-LAST:event_jPasswordFieldFocusGained
-
-    private void jPasswordFieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jPasswordFieldFocusLost
-
-        String pass = String.valueOf(jPasswordField.getPassword());
-
-        if(pass.equals("") || pass.trim().equals("Password") )
-        {
-            jPasswordField.setText("Password");
-            jPasswordField.setForeground(new Color(153,153,153));
-        }
-        jPasswordField.setBorder(null);
-    }//GEN-LAST:event_jPasswordFieldFocusLost
-
-    private void jPasswordFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jPasswordFieldActionPerformed
-
-    private void jButton_LoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_LoginActionPerformed
-        Interface iface = new Interface();
-        iface.setVisible(true);
-
-        this.dispose();
-    }//GEN-LAST:event_jButton_LoginActionPerformed
-
     private void jTextField_ıd1FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField_ıd1FocusGained
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField_ıd1FocusGained
@@ -349,18 +205,6 @@ public class Interface extends javax.swing.JFrame {
     private void jTextField_ıd1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_ıd1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField_ıd1ActionPerformed
-
-    private void jTextField_ıd2FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField_ıd2FocusGained
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField_ıd2FocusGained
-
-    private void jTextField_ıd2FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField_ıd2FocusLost
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField_ıd2FocusLost
-
-    private void jTextField_ıd2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_ıd2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField_ıd2ActionPerformed
 
     private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
 
@@ -407,15 +251,11 @@ public class Interface extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton_Login;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel_close;
     private javax.swing.JLabel jLabel_min;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPasswordField jPasswordField;
-    private javax.swing.JTextField jTextField_ıd;
     private javax.swing.JTextField jTextField_ıd1;
-    private javax.swing.JTextField jTextField_ıd2;
     // End of variables declaration//GEN-END:variables
 }
